@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+
+        <title>FSA Ratings</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center-block">
+                    <h3>FSA Rating Distribution</h3>
+                    <form method="GET" class="home-authorities-form">
+                        <div class="form-group select">
+                            <select name="authority-id" class="home-authorities-select form-control custom-select">
+                                <option value="">  Please select an authority</option>
+                                {{range .}}
+                                <option value="{{.LocalAuthorityId}}">{{.Name}}</option>
+                                {{end}}
+                            </select>
+                        </div>
+                        <div class="alert alert-danger hidden" role="alert">
+                            <strong>Oh snap!</strong><spann class="message"></spann>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="home-authorities-submit btn btn-primary">Look up!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 center-block">
+                    <div class="table"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/assets/js/home.js"></script>
+    </body>
+</html>
