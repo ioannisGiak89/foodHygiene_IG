@@ -2,7 +2,7 @@
 
 ## Environments
 
-Demo: [http://138.68.81.23:8080/home](http://138.68.81.23:8080/home)
+Demo: N service at the moment
 
 ## Prerequisites
 
