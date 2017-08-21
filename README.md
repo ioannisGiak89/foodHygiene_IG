@@ -2,7 +2,7 @@
 
 ## Environments
 
-Demo: N service at the moment
+Demo: No service at the moment
 
 ## Prerequisites
 
